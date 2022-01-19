@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Audiowide&family=Hammersmith+One&family=Josefin+Sans:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto:wght@700&&family=Shippori+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Audiowide&family=Hammersmith+One&family=Josefin+Sans:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto:wght@700&&family=Shippori+Antique&display=swap');
 
 *{
     margin: 0;
@@ -89,7 +89,7 @@ header{
     left: 0;
     right: 0;
     display: absolute;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #296cd8;
     text-align: center;
     transition: 0.5s;
@@ -134,37 +134,43 @@ header{
     }
 
   .modal-box {
-    background-image: linear-gradient(to right, #ff6a65 0%, #fa70d7 100%);
     text-align: center;
-    background-color: rgb(54, 55, 68);
+    background-color: aliceblue;
     position: relative;
-    width:30rem;
-    height: 28rem;
+    width:26rem;
+    height: 30rem;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
     flex-flow: column wrap;
-    border-radius: 10px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                rgb(67, 149, 255) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
   }
   .modal-box .modal-inner form{
     padding: 0.7rem 1rem;
     display: grid;
     flex-direction: column;
     flex-flow: column wrap;
-    width: 30rem;
+    width:26rem;
 }
 .modal-box .modal-inner h1{
-    color: aliceblue;
-    font-weight: 500;
+    color:rgb(57, 159, 255);
+    font-weight: bolder;
     letter-spacing: 2px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 .modal-box .modal-inner .modal-close{
     position: absolute;
     top: 0;
     right: 0;
-    color: rgb(31, 34, 35);
+    color: rgb(35, 31, 31);
     font-size: 2rem;
     margin-right: 0.2rem;
     font-weight: lighter;
@@ -179,38 +185,39 @@ header{
 }
 .modal-box .modal-inner input{
     margin: 1rem 0rem;
-    padding: 0.5rem;
-    letter-spacing: 2px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
+    padding: 0.8rem;
+    letter-spacing: 1px;
+    font-family: 'Outfit', sans-serif;
     text-transform: uppercase;
     border: none;
     background-color: rgba(184, 209, 231, 0.554);
     font-size: 1.2em;
-    border-radius: 0.4rem;
+    border-radius: 0.3rem;
+    outline-color: rgba(57, 159, 255, 0.733);
+    color: rgb(59, 70, 81);
 }
 
 .modal-box .modal-inner button{
     margin: 0.4rem 0rem;
-    padding: 0.6rem;
+    padding: 0.8rem;
     text-transform: uppercase;    
-    background-image: linear-gradient(to right, #579ffd 0%, #42faf1 100%);
+    background-color:rgba(5, 143, 255, 0.733) ;
     margin-top: 1rem;
     font-size: 1.5rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
     letter-spacing: 2px;
     border-radius: 0.4rem;
     outline: none;
     border: none;
     cursor: pointer;
     transition: 0.3s;
-    color: #050505;
+    color: aliceblue;
 }
 
 .modal-box .modal-inner button:hover{
-    background-image: linear-gradient(to right ,#2f588e 0%, #289892 100%);
-    color: aliceblue;
+    background-color:rgba(3, 79, 142, 0.733) ;
+    color: rgb(209, 224, 255);
 }
 
 
@@ -282,16 +289,35 @@ header{
     }
     .modal-box {
         font-size: 0.8rem;
-        height:23rem;
+        height:25rem;
+    }
+    .modal-box .modal-inner h1{
+        margin-top: 2rem;
+    }
+    .modal-box .modal-inner button{
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+    .modal-box .modal-inner input{
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
     }
 }
+
 @media screen and (max-width:354px){
     .modal-box {
         width: 15rem;
-        height:22rem;
+        height:23rem;
     }
     .modal-box .modal-inner form{
         width: 15rem;
+    }
+    .modal-box .modal-inner h1{
+        margin-bottom: 0.5rem;
+    }
+    .modal-box .modal-inner input{
+        margin-top: 0.1rem;
     }
     .modal-box .modal-inner .modal-close{
         font-size: 1.2rem;
