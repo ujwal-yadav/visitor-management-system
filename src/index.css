@@ -1,13 +1,300 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Audiowide&family=Hammersmith+One&family=Josefin+Sans:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto:wght@700&&family=Shippori+Antique&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    display: grid;
+    place-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #E4F0FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23E4F0FF' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23e2eefc' href='%23s' y='2'/%3E%3Cuse fill='%23e2eefc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23dfebfa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23dfebfa' href='%23s'/%3E%3Cuse fill='%23dde9f7' href='%23s' x='2'/%3E%3Cuse fill='%23dde9f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23dbe6f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23dbe6f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23d8e4f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23E4F0FF'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23d6e1ef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23E4F0FF'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23E4F0FF'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23E4F0FF'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size:80rem;
+}
+
+.visitor-box{
+    padding: 1rem 1rem;
+    min-height: 100vh;
+    width: 50vw;
+}
+
+header{
+    padding:1.3rem 1rem;
+    margin: 1rem 0rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: rgb(56, 56, 55);
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.visitor-inner{
+    display: flex;
+    background-color: #a5bddc67;
+    background-color: #34343d;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top:1.2rem;
+}
+.user-data div{
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    color: rgb(34, 33, 33);
+    color:aliceblue;
+    letter-spacing: 1px;
+}
+.user-data div span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(152, 207, 255);
+}
+.user-data{
+    width: 100%;
+}
+.exit-btn{
+    display: flex;
+    align-items: center;
+}
+.exit-btn .button{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(22, 131, 220);
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-family: 'Audiowide', cursive;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+    font-size:1rem;
+    cursor: pointer;
+}
+
+.exit-btn .button:hover{
+    background-color: rgb(62, 79, 175);
+}
+
+.add-visitor{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: absolute;
+    font-size: 5rem;
+    color: #296cd8;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .add-visitor .add-btn i{
+    border-radius: 55%;
+    background-color: transparent;
+    transition: 0.2s all;
+    margin-bottom: 1rem;
+    bottom: 0;
+    cursor: pointer;
+  }
+  .add-visitor .add-btn i:active{
+    transform: scale(0.78);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+  .add-visitor .add-btn i:hover{
+    color: #10244e;
+  }
+  .modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 2, 2, 0.493);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+    }
+
+  .modal-box {
+    background-image: linear-gradient(to right, #ff6a65 0%, #fa70d7 100%);
+    text-align: center;
+    background-color: rgb(54, 55, 68);
+    position: relative;
+    width:30rem;
+    height: 28rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column wrap;
+    border-radius: 10px;
+  }
+  .modal-box .modal-inner form{
+    padding: 0.7rem 1rem;
+    display: grid;
+    flex-direction: column;
+    flex-flow: column wrap;
+    width: 30rem;
+}
+.modal-box .modal-inner h1{
+    color: aliceblue;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+.modal-box .modal-inner .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(31, 34, 35);
+    font-size: 2rem;
+    margin-right: 0.2rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    padding: 0;
+    cursor: pointer;
+
+}
+.modal-box .modal-inner .modal-close:hover{
+    color: rgb(202, 202, 202);
+}
+.modal-box .modal-inner input{
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    letter-spacing: 2px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(184, 209, 231, 0.554);
+    font-size: 1.2em;
+    border-radius: 0.4rem;
+}
+
+.modal-box .modal-inner button{
+    margin: 0.4rem 0rem;
+    padding: 0.6rem;
+    text-transform: uppercase;    
+    background-image: linear-gradient(to right, #579ffd 0%, #42faf1 100%);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #050505;
+}
+
+.modal-box .modal-inner button:hover{
+    background-image: linear-gradient(to right ,#2f588e 0%, #289892 100%);
+    color: aliceblue;
+}
+
+
+@media screen and (max-width:1024px){
+    .visitor-box{
+        width: 80vw;
+    }
+    .add-visitor{
+        font-size: 4.5rem;
+    }
+    .modal-box .modal-inner input{
+        font-size: 1em;
+    }
+    
+    .modal-box .modal-inner button{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:768px){
+    .visitor-box{
+        width: 100vw;
+    }
+    .add-visitor{
+        font-size: 4rem;
+    }
+    .modal-box {
+        width: 25rem;
+        height: 25rem;
+      }
+    .modal-box .modal-inner form{
+        width: 25rem;
+    }
+    .modal-box .modal-inner .modal-close{
+    font-size: 1.7rem;
+    }
+}
+@media screen and (max-width:442px){
+    .modal-box {
+        width: 20rem;
+        height: 25rem;
+      }
+    .modal-box .modal-inner form{
+        width: 20rem;
+    }
+    .modal-box .modal-inner .modal-close{
+    font-size: 1.7rem;
+    }
+    .user-data div span{
+    font-weight: bolder;
+    }
+}
+@media screen and (max-width:375px){
+    .visitor-box header{
+        font-size: 0.7rem;
+    }
+    .visitor-box .user-data div{
+        font-size: 0.8rem;
+    }
+    .visitor-box .user-data span{
+        font-size: 0.8rem;
+    }
+    .exit-btn .button{
+        font-size: 0.7rem;
+    }
+    .add-visitor{
+        margin-top: 0.7rem;
+        font-size: 3rem;
+    }
+    .modal-box {
+        font-size: 0.8rem;
+        height:23rem;
+    }
+}
+@media screen and (max-width:354px){
+    .modal-box {
+        width: 15rem;
+        height:22rem;
+    }
+    .modal-box .modal-inner form{
+        width: 15rem;
+    }
+    .modal-box .modal-inner .modal-close{
+        font-size: 1.2rem;
+        margin-top: 0.2rem;
+    }
 }
